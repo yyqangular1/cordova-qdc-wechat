@@ -1,4 +1,4 @@
-package to.be.replaced.wxapi;
+package __PACKAGE_NAME__;
 
 import java.io.BufferedReader;
 import java.net.URL;
