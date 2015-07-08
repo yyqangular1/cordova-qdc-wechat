@@ -1,29 +1,19 @@
 # cordova-plugin-wechat
 
-A cordova plugin, a JS version of Wechat SDK
-
-# Feature
-
-Share title, description, image, and link to wechat moment(朋友圈)
-
-# Example
-
-See [cordova-plugin-wechat-example](https://github.com/xu-li/cordova-plugin-wechat-example)
+微信分享插件
 
 # Install(iOS)
 
-1. ```cordova plugin add https://github.com/xu-li/cordova-plugin-wechat```, or using [plugman](https://npmjs.org/package/plugman), [phonegap](https://npmjs.org/package/phonegap), [ionic](http://ionicframework.com/)
+1. ```ionic plugin add https://github.com/yyqangular1/cordova-qdc-wechat.git```
 
 2. Add ```<preference name="wechatappid" value="YOUR_WECHAT_APP_ID" />``` in your config.xml
 
-3. ```cordova build ios```
+3. ```ionic build ios```
 
 4. Change the URL Type using XCode
 
 # Note: Install(Android) 
-Inspired by https://github.com/vilic/cordova-plugin-wechat
-Wechat needs to callback to "your.package.name.wxapi.WXEntryActivity" to handle response. Since the package name is determined when you install the packag.java, so we use hook to call android-install.js to do the work.
-I found some older version of cordova(ionic 1.3.0) doesn't trigger this js, so if you found this file isn't copied, consider upgrade Cordova.
+ionic plugin add com.wordsbaking.cordova.wechat --variable APP_ID=[你的APPID]
 
 
 # Usage
@@ -98,29 +88,3 @@ Wechat.share({
 });
 ```
 
-# FAQ
-
-Q: "Wechat not installed", even installed
-
-A: Please make sure "wechatappid" is added in ```config.xml``` 
-
-Q: After sharing in wechat, it will not get back to my app.
-
-A: Please make sure the URL Type is correct(iOS)
-
-
-# TODO
-
-1. ~~Add android version~~
-
-2. ~~Share to wechat session(聊天) and wechat favorite(收藏)~~
-
-3. ~~Add other media types, including music etc.~~
-
-4. Other APIs
-
-5. ~~Android Version update~~
-
-# LICENSE
-
-[MIT LICENSE](http://opensource.org/licenses/MIT)
